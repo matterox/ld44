@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: c2fe1af1d35141c41b65a2b2953ca22e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chair
+    100002: ClockPointHours
+    100004: ClockPointMinutes
+    100006: Cubicle
+    100008: Cylinder
+    100010: Keyboard
+    100012: Note
+    100014: //RootNode
+    100016: Pc_monitor
+    100018: Phone_base
+    100020: Phone_ear
+    100022: Phone_wire
+    400000: Chair
+    400002: ClockPointHours
+    400004: ClockPointMinutes
+    400006: Cubicle
+    400008: Cylinder
+    400010: Keyboard
+    400012: Note
+    400014: //RootNode
+    400016: Pc_monitor
+    400018: Phone_base
+    400020: Phone_ear
+    400022: Phone_wire
+    2100000: ClockPointer
+    2100002: ClockMat
+    2100004: ClockInner
+    2100006: KeyboardBase
+    2100008: KeyboardKeys
+    2100010: Chair
+    2100012: unnamed
+    2100014: wood
+    2100016: PhoneB
+    2100018: PhoneBase
+    2100020: PhoneButtons
+    2100022: PcBase
+    2100024: PcScreen
+    2300000: Chair
+    2300002: ClockPointHours
+    2300004: ClockPointMinutes
+    2300006: Cubicle
+    2300008: Cylinder
+    2300010: Keyboard
+    2300012: Note
+    2300014: Pc_monitor
+    2300016: Phone_base
+    2300018: Phone_ear
+    2300020: Phone_wire
+    3300000: Chair
+    3300002: ClockPointHours
+    3300004: ClockPointMinutes
+    3300006: Cubicle
+    3300008: Cylinder
+    3300010: Keyboard
+    3300012: Note
+    3300014: Pc_monitor
+    3300016: Phone_base
+    3300018: Phone_ear
+    3300020: Phone_wire
+    4300000: ClockPointHours
+    4300002: ClockPointMinutes
+    4300004: Cylinder
+    4300006: Keyboard
+    4300008: Chair
+    4300010: Note
+    4300012: Cubicle
+    4300014: Phone_wire
+    4300016: Phone_ear
+    4300018: Phone_base
+    4300020: Pc_monitor
+    6400000: Chair
+    6400002: ClockPointHours
+    6400004: ClockPointMinutes
+    6400006: Cubicle
+    6400008: Cylinder
+    6400010: Keyboard
+    6400012: Note
+    6400014: Pc_monitor
+    6400016: Phone_base
+    6400018: Phone_ear
+    6400020: Phone_wire
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.5
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
