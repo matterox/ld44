@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                playerLive -= Time.deltaTime * healthDecreaseSpeed;
+                playerLive -= Time.deltaTime * healthDecreaseSpeed/2;
             }
 
             RaycastHit hit;
@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
             if (Vector3.Distance(transform.position, workPlace.position) < 3 && !GameManager.isWorkStarted)
             {
                 gameManager.SetTooltipText("Press 'e' to start working.");
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button2))
                 {
                     gameManager.StartWork();
                 }

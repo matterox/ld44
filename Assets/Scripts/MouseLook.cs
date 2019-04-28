@@ -30,8 +30,8 @@ public class MouseLook : MonoBehaviour
 
     private void RotateCamera()
     {
-        float mouseXRotation = Input.GetAxis("Mouse X") * mouseSens * Time.deltaTime;
-        float mouseYRotation = Input.GetAxis("Mouse Y") * mouseSens * Time.deltaTime;
+        float mouseXRotation = (Input.GetAxis("Joy X") + Input.GetAxis("Mouse X")) * mouseSens * Time.deltaTime;
+        float mouseYRotation = Input.GetAxis("Joy Y") + Input.GetAxis("Mouse Y") * mouseSens * Time.deltaTime;
         xLock += mouseYRotation;
 
         if (GameManager.dayOver)
