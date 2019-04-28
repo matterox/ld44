@@ -203,6 +203,8 @@ MonoBehaviour:
   workPlace: {fileID: 0}
   mouseLook: {fileID: 456906449832460216}
   healthUiSlider: {fileID: 0}
+  targetImage: {fileID: 0}
+  tooltipMouse: {fileID: 0}
   playerMaxHealth: 100
   gameOverRagdoll: {fileID: 8461015550022785265, guid: 6e8487621512dfd45abb80f26bb60de0,
     type: 3}

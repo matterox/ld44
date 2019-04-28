@@ -5,9 +5,12 @@ using UnityEngine;
 public enum ButtonType { Button, Mail, Phone }
 public class WorkButton : MonoBehaviour
 {
-    
+    [SerializeField]
+    private GameObject liveAddText;
     [SerializeField]
     private ButtonType buttonType;
+    [SerializeField]
+    private AudioClip activateClip;
     [SerializeField]
     private float waitTime = 0.2f;
     [SerializeField]
@@ -70,6 +73,12 @@ public class WorkButton : MonoBehaviour
         {
             if (activeCounter > activeIn)
             {
+                if(activateClip!= null)
+                {
+                    AudioSource src = GetComponent<AudioSource>();
+                    src.clip = activateClip;
+                    src.Play();
+                }
                 canActivate = true;
                 activateObject.SetActive(true);
                 ResetActiveCounter();
@@ -93,19 +102,23 @@ public class WorkButton : MonoBehaviour
             canActivate = false;
         }
 
+        int addAmount = 0;
         switch (buttonType)
         {
             case ButtonType.Button:
-                player.ReplenishHealth(5);
+                addAmount = 5;
                 break;
             case ButtonType.Mail:
-                player.ReplenishHealth(20);
+                addAmount = 20;
                 break;
             case ButtonType.Phone:
-                player.ReplenishHealth(12);
+                addAmount = 12;
                 break;
         }
-
+        player.ReplenishHealth(addAmount);
+        GameObject addText = Instantiate(liveAddText, transform.position, Quaternion.identity);
+        addText.transform.GetChild(0).GetComponent<TextMesh>().text = "+" + addAmount;
+        Destroy(addText, 5f);
     }
 
     public void ActivateButton()

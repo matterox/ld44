@@ -6587,6 +6587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc848fbff536cc47a992bfb55d0c40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liveAddText: {fileID: 5367088083539885253, guid: 9b0d4825ed1c68242986c46322a35006,
+    type: 3}
   buttonType: 2
   waitTime: 0.2
   timedActivation: 1
@@ -7131,6 +7133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc848fbff536cc47a992bfb55d0c40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liveAddText: {fileID: 5367088083539885253, guid: 9b0d4825ed1c68242986c46322a35006,
+    type: 3}
   buttonType: 1
   waitTime: 0.2
   timedActivation: 1
@@ -9935,6 +9939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc848fbff536cc47a992bfb55d0c40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liveAddText: {fileID: 5367088083539885253, guid: 9b0d4825ed1c68242986c46322a35006,
+    type: 3}
   buttonType: 0
   waitTime: 0.2
   timedActivation: 0
