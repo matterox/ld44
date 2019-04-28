@@ -50,6 +50,8 @@ public class Worker : MonoBehaviour
 
     private void Die()
     {
+        if (GetComponent<AudioSource>() != null)
+            GetComponent<AudioSource>().Stop();
         workerRenderer.material = workerDiedMaterial;
         workerEnergy = 0;
         isDead = true;

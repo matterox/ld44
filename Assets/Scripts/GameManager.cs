@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     private string[] lines = new string[] {
         "Here we go again.",
         "Hope it's not last.",
-        "Again.",
+        "Same routine again.",
         "What i'm doing here?",
         "What will happen today? Right, nothing..."
     };
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
         "My hands are ready.",
         "Should work now.",
         "Another day at work...",
-        "What i'm doing here?"
+        "I'm filled with determination."
     };
 
     private void Start()
@@ -67,7 +67,13 @@ public class GameManager : MonoBehaviour
             currentDayStartText = "First day at work. Better go to my table and start working...";
         } else
         {
-            currentDayStartText = "Day " + currentDay + ". " + lines[Random.Range(0, lines.Length)];
+            if (currentDay == 13)
+            {
+                currentDayStartText = "Day " + currentDay + ". Something strange going on here...";
+            } else
+            {
+                currentDayStartText = "Day " + currentDay + ". " + lines[Random.Range(0, lines.Length)];
+            }
         }
     }
 
@@ -122,7 +128,14 @@ public class GameManager : MonoBehaviour
     public void StartNewDay()
     {
         currentDay++;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (currentDay == 13)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        } else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        
     }
 
     private void UpdateSunPosition()

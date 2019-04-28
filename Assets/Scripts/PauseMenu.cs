@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField]
     private GameObject menuUi;
+    [SerializeField]
+    private GameObject inGameUi;
 
     private void Start()
     {
@@ -39,6 +41,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        if (!GameManager.gameOver && !GameManager.dayOver)
+            inGameUi.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         menuUi.SetActive(false);
@@ -48,6 +52,7 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        inGameUi.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         menuUi.SetActive(true);
@@ -57,6 +62,9 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 1;
         Application.Quit();
     }
 
@@ -66,6 +74,7 @@ public class PauseMenu : MonoBehaviour
         GameManager.dayOver = false;
         GameManager.gameOver = false;
         GameManager.isWorkStarted = false;
+        GameManager.currentDay = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

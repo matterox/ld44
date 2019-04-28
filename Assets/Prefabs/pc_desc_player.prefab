@@ -6590,6 +6590,7 @@ MonoBehaviour:
   liveAddText: {fileID: 5367088083539885253, guid: 9b0d4825ed1c68242986c46322a35006,
     type: 3}
   buttonType: 2
+  activateClip: {fileID: 0}
   waitTime: 0.2
   timedActivation: 1
   activateObject: {fileID: 3943649657557747379}
@@ -6672,7 +6673,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100022, guid: c2fe1af1d35141c41b65a2b2953ca22e, type: 3}
-  - {fileID: 2100024, guid: c2fe1af1d35141c41b65a2b2953ca22e, type: 3}
+  - {fileID: 2100000, guid: 19b02801bc4b49743a9a0282ed009de7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7136,6 +7137,7 @@ MonoBehaviour:
   liveAddText: {fileID: 5367088083539885253, guid: 9b0d4825ed1c68242986c46322a35006,
     type: 3}
   buttonType: 1
+  activateClip: {fileID: 0}
   waitTime: 0.2
   timedActivation: 1
   activateObject: {fileID: 7667877015607210306}
@@ -9942,6 +9944,7 @@ MonoBehaviour:
   liveAddText: {fileID: 5367088083539885253, guid: 9b0d4825ed1c68242986c46322a35006,
     type: 3}
   buttonType: 0
+  activateClip: {fileID: 0}
   waitTime: 0.2
   timedActivation: 0
   activateObject: {fileID: 0}

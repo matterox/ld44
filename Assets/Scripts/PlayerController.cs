@@ -40,7 +40,14 @@ public class PlayerController : MonoBehaviour
         //    return;
         if (!PauseMenu.isPaused)
         {
-            playerLive -= Time.deltaTime * healthDecreaseSpeed * (0.54f + GameManager.currentDay * 0.1f);
+            if (GameManager.currentDay != 13)
+            {
+                playerLive -= Time.deltaTime * healthDecreaseSpeed * (0.54f + GameManager.currentDay * 0.1f);
+            }
+            else
+            {
+                playerLive -= Time.deltaTime * healthDecreaseSpeed;
+            }
 
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
