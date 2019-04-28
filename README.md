@@ -1,4 +1,4 @@
-# ld44
+# LD44 - Your life is currency
 Ludum Dare 44 Entry
 Source code for game WORK!
 https://mxtgames.itch.io/work
